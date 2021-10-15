@@ -1,0 +1,582 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+body{
+	/*background: url(IMG/giff.gif) no-repeat;*/
+}
+
+#pgLogin {
+	background: url(IMG/giff.gif) no-repeat;
+	/*background: url(https://img.freepik.com/vetores-gratis/fundo-abstrato-colorido_23-2148807053.jpg?size=626&ext=jpg) no-repeat;*/
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	margin-left: 30%;
+	margin-right: 26%;
+}
+
+.login-box{
+	/*background-color: rgba(0, 0, 0, 0.527);*/
+	background: linear-gradient(
+        rgba(0, 255, 255, 0.8),
+        rgba(70, 130, 180, 0.6),
+        rgba(0, 0, 0, 0.6)
+    );
+	border: solid cyan 5px;
+	border-top-right-radius: 90px;
+	border-bottom-left-radius: 90px;
+	padding: 40px;
+	box-shadow: 1px 2px 10px cyan, 4px 6px 20px cyan;
+
+
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: write;
+}
+.login-box #principal{
+	float: center;
+	font-size: 36px;
+	border-bottom: 4px solid cyan;
+	margin-bottom: 50px;
+	padding: 10px 1px;
+	color: white;
+	text-align: center;
+	font-family: OCR A Std, monospace;
+}
+.textbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0px;
+	margin: 8px 0;
+	border-bottom: 1px solid cyan;
+}
+.textbox i{
+	width: 26px;
+	float: left;
+	color: white;
+	text-align: center;
+}
+.textbox input{
+	
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 18px;
+	width: 85%;
+	margin: 1px;
+	
+	/*
+	widht: 100%;
+	background: trasparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	color: white;
+	*/
+
+
+}
+
+#entrar{
+	width: 100%;
+	background: none;
+	border: 2px solid cyan;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+	border-radius: 30PX;
+}
+
+#entrar:hover{
+    background-color: rgbA(0, 179, 179, 0.5);
+    box-shadow: inset 2px 2px 2px rgba(0, 204, 204 0.2);
+    text-shadow: none;
+    color: rbg(230, 255, 255);
+}
+
+
+
+
+
+
+/* PAGINA 1*/
+
+
+#pagina1{
+	/*background: url(IMG/jif.gif);*/
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+}
+
+
+/* C A B E S A R I O */
+
+#rodape{
+    height: 100px;
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+#rodape:before{
+    content: "";
+    position: absolute;
+    height: 1800px;
+    width: 1800px;
+    background: conic-gradient(
+        Violet,
+        cyan,
+        SteelBlue,
+        purple,
+        Orchid
+    );
+    left: -3%;
+    top: -866px;
+    animation: spin 4.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+#rodape:after{
+    content: "Asteroids";
+    position: absolute;
+    background-color: black;
+    height: 6%;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    color: cyan;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    top: 0;
+    width: 99.1%;
+    height: 12;
+    margin: 7px;
+    padding-top: 14px;
+	padding-bottom: 30px
+}
+
+
+/* R O D A P E */
+
+footer{
+	/*height: 100px;*/
+    position: absolute;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+footer:before{
+	content: "";
+    position: absolute;
+    height: 1800px;
+    width: 1800px;
+    background: conic-gradient(
+        Violet,
+        cyan,
+        SteelBlue,
+        purple,
+        Orchid
+    );
+    left: -3%;
+    top: -866px;
+    animation: spin 4.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+footer:after{
+	content: "Desenvolvido por: Lucas Sepriano - 1DS3";
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    color: cyan;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    bottom: 0;
+    margin: 7px;
+	width: 99.1%;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+
+
+
+
+/* B O T Ã O   G A M E S */
+/* P A G I N A S */
+.pg {
+	color: cyan;
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.pg:hover{
+	background-color: rgb(230, 255, 255);
+	border-radius: 30px;
+	transition: .4s ease-in-out;
+	color: black;
+}
+
+#rodape #gaveta:hover {
+	background-color: rgb(10, 23, 107);
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border: solid 4px cyan;
+	transition: 2s;
+	/*display: block;*/
+	/*width: 480px;*/
+	width: 260px;
+}
+
+
+#gaveta{
+	color: cyan;
+	position: absolute;
+	border: solid 4px cyan;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	margin: 10px;
+	z-index: 1;
+	width: 90px;
+	overflow-x: hidden; 
+	overflow-y: hidden;
+	/*width: 100px;*/
+	height: 35px;
+	transition: 2s;
+}
+
+
+/* B O T Ã O   S A I R */
+
+
+#btnSair {
+	color: cyan;
+	height: 15px;
+	width: 60px;
+	right: 0;
+
+
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 14px;
+	position: absolute;
+	border: solid 4px cyan;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	margin-top: 10px;
+	margin-right: 8px;
+	text-align: center;
+	/*z-index: 1;*/
+/*	overflow-x: hidden; 
+	overflow-y: hidden;*/
+
+}
+
+#btnSair:hover {
+	background-color: rgb(10, 23, 107);
+}
+
+
+
+
+
+
+/* J O G O */
+
+#jogo{
+	transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	padding-right: 0;
+	/*box-shadow: 10px 10px 10px 5px black;*/
+	/*display: none;*/
+}
+
+
+#jogo-texto{
+	transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	padding-right: 0;
+	background: linear-gradient( 
+	rgba(0, 255, 255, 0.6),
+	rgba(0,0,0, 0.6)
+	);
+	border-radius: 50px;
+	padding: 30px;
+}
+
+
+
+
+
+
+/*PAPEL DE PAREDE*/
+
+#chec{
+	border: 4px solid cyan;
+	padding: 10px 30px;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
+
+#chec:hover {
+	background-color: rgba(128, 0, 128, 0.567);
+}
+
+#checkbox, #checkbox2{
+	display: none;
+}
+
+#fundo{
+	transform: translate(-50%,-50%);
+    left: 15%;
+    top: 96.4%;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	padding-right: 0;
+	z-index: 1;
+}
+
+
+#papel{
+	width: 10%;
+	/*background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	margin-left: 30%;
+	margin-right: 26%;*/
+}
+
+#papel2{
+	width: 10%;
+	
+	/*background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	margin-left: 30%;
+	margin-right: 26%;*/
+}
+
+
+#checkbox[value="r1"]:checked ~ #papel{
+	background: url(IMG/jif.gif)no-repeat;
+	width: 30%;
+	padding: 34.98%;
+	background-size: cover;
+
+	/*margin: 0;*/
+	/*width: 49.8%;*/
+
+
+	/*background: url(IMG/giff.gif)no-repeat;
+	padding: 25%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    width: 49.8%;
+
+    */
+    /*position: relative;*/
+    /*top: 0;*/
+    /*height: 65px;*/
+    /*transition: 4s;*/
+}
+
+#checkbox2[value="r2"]:checked ~ #papel2{
+	background: url(IMG/gif.gif)no-repeat;
+    width: 30%;
+	padding: 34.98%;
+	background-size: cover;
+
+
+	/*padding: 25%;
+    width: 49.8%;*/
+
+    /*width: 100%;*/
+    /*position: relative;*/
+    /*border-radius: 5px;*/
+    /*top: 0;*/
+    /*box-shadow: 0 20px 35px rgba(0,0,0,0.3);*/
+    /*height: 65px;*/
+    /*transition: 4s;*/
+}
+
+#checkbox3[value="r3"]:checked ~ #papel2{
+	background: url(IMG/giff.gif)no-repeat;
+   	width: 30%;
+	padding: 34.98%;
+	background-size: cover;
+
+}
+
+
+iframe{
+	background: linear-gradient(
+        rgba(238,130,238, 0.7),
+        rgba(0, 255, 255, 0.7),
+        rgba(70,130,180, 0.7),
+        rgba(128,0,128, 0.7),
+        rgba(218,112,214, 0.7)
+    );
+	height: 358px;
+	width: 600px;/*Largura*/
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+p{
+	text-align: center;
+}*/
+
+
+
+
+
+
+
+/*footer{
+	text-align: center;
+	color: cyan;
+	/*border: solid cyan 5px;*//*
+	position: absolute;
+	bottom: 0;
+	width: 99.4%;
+	background-color: black;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	box-shadow: 35px 20px 35px rgba(0,0,0,0.9);
+}*/
+
+
+/* B O R D A RGB */
+
+
+
+
+
+
+
+
+
+
+/*body{
+	background-color: black;s
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: courier "Lucida Console" monospace;
+
+}
+
+#central{
+	padding: 0;
+	margin: 2px;
+	list-style: none;
+	text-align: center;
+}
+
+#centarl #fundo{
+	background-color: darkcyan;
+}
+
+#titulo{
+	margin: 0;
+	padding: 1px;
+	text-align: center;
+	color:DarkCyan;
+	border: solid darkcyan;
+}
+
+a{
+	text-decoration: none;
+}*/
+
+/*https://emupedia.net/beta/emuos/*/
+	
+
+
+
+	/*ele some elementos display: none;*/
